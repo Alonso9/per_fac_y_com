@@ -67,7 +67,7 @@ int factorial(int n)
 	else{
     	return (n*factorial(n-1)); /*Regresa el valor ingresado multiplicado por el factorial de su predecesor*/
 	}
-}
+} //cierre de la funcion factorial
 
 /*Se define la funcion permutacion*/
 /*Realiza la operacion de encontrar el factorial del numero ingresado en la funcion principal*/
@@ -77,12 +77,15 @@ int permutacion(int n, int k){
 	}else{
 		return factorial(n)/factorial(n-k); /*Regresa el valor ingresado y resultante de la formula de la permutacion*/
 	}
-}
+} //Cierre de la funcion permutacion
 
+
+/*Se define la funcion permutacion*/
+/*Realiza la operacion de encontrar el factorial del numero ingresado en la funcion principal*/
 int combinacion(int n, int k){
 	if(k>n){ //condicional de control de la funcion
 		return printf("K debe ser menor que n"); //retorna una respuestas en caso de cumplir la condicion
 	}else{
 		return factorial(n)/(factorial(n-k)*factorial(k)); /*Regresa el valor ingresado  y resultante de la formula de la combinacion*/
 	}
-}
+} //Cierre de la funcion combinacion
